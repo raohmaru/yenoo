@@ -1,3 +1,12 @@
+---
+title: Resource Name
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+type: resource
+status: reference
+tags: []
+---
+
 # Overview
 
 Structured summary of the source content.

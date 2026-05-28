@@ -6,19 +6,38 @@ description: Use when the user asks a question about the knowledge base (researc
 # Query Workflow
 
 When asked about a topic:
-1. Search the vault
-  - Read `_ref/index.md` and locate relevant resource notes
-  - If no relevant resource notes are found, check if notes already exist `grep -r "topic" resources/`
-2. Read the most relevant resource notes and related notes
-3. Fall back to raw sources (`_raw/`) only if the wiki is missing detail.
-4. Answer the question.
-5. If the answer revealed a gap, ask the user if he wants to run the skill `/research` to research further the topic.
 
-Append a `query` entry to `_ref/log.md` summarizing what was asked.
+1. **Search the vault**
+    - Read `_ref/index.md` and locate relevant notes in `resources/`, `areas/`, `projects/` and `archive/`.
+    - If no relevant notes found, broaden the search: `grep -ri "topic" resources/ areas/ projects/ archive/`
+    - Read the most relevant resource notes and their connected pages
+
+2. **Fall back to raw sources** — only check `_raw/` if the existing notes lack sufficient detail
+
+3. **Answer the question**
+    - Use natural language; cite every claim with a `[[wikilink]]` to its source note
+    - If uncertain, say so clearly — do not invent content not in the vault
+    - Suggest a new source to ingest or research if the vault has a gap
+
+4. **File back answers worth keeping**
+    - If the answer reveals a new insight worth preserving, ask the user whether to create a resource note or update an existing note
+    - If yes, follow the conventions in SCHEMA.md (frontmatter, wikilinks, templates)
+
+5. **If the answer revealed a gap**, ask the user if they want to run the `/research` skill to research the topic further
+
+6. **Add to log**
+    Append a `query` entry to `_ref/log.md`:
+    ```
+    ## [YYYY-MM-DD] query | Topic asked
+    - Short summary of what was asked and answered
+    ```
 
 ## Conventions
 
-Prefer reading 2–5 good notes over sweeping the entire vault.
+- Prefer reading 2–5 good notes over sweeping the entire vault
+- Minimum 2 outbound `[[wikilinks]]` per page when creating or updating notes
+- Validate frontmatter exists and is well-formed on creation or update
+- When updating a note, always bump the `updated` date to today
 
 ## Anti-patterns
 
@@ -26,4 +45,4 @@ Prefer reading 2–5 good notes over sweeping the entire vault.
 - Answer without citations → every claim must link to a note
 - Create a new note for a one-off trivial question → only file back answers worth keeping
 - Invent content not in the vault → if you don't know, say so and suggest a new source to ingest
-- Skip the log.md entry when filing an answer back
+- Skip the log entry when answering a query

@@ -1,3 +1,12 @@
+---
+title: Project Name
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+type: project
+status: active
+tags: []
+---
+
 # Project
 
 Structured summary of the project.
@@ -12,6 +21,15 @@ Structured summary of the project.
 
 ## Deadline
 
-YYYY/MM/DD
+YYYY-MM-DD
+
+## Related Area
+
+- [[Area Name]] — brief context
+
+## Connections
+
+- [[Related Note]] — context
+- ...
 
 ## Notes
