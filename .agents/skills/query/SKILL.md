@@ -8,24 +8,33 @@ description: Use when the user asks a question about the knowledge base (researc
 When asked about a topic:
 
 1. **Search the vault**
-    - Read `_ref/index.md` and locate relevant notes in `resources/`, `areas/`, `projects/` and `archive/`.
+    - Read `_ref/index.md` and run a semantic search against it and locate relevant notes in `resources/`, `areas/`, `projects/` and `archive/`.
     - If no relevant notes found, broaden the search: `grep -ri "topic" resources/ areas/ projects/ archive/`
     - Read the most relevant resource notes and their connected pages
 
 2. **Fall back to raw sources** — only check `_raw/` if the existing notes lack sufficient detail
 
-3. **Answer the question**
+3. **Evaluate relevance**
+   - For each candidate note, assess semantic match to the question
+   - Keep only notes where key concepts from the question appear in the content
+   - If no notes have substantively relevant content, say: "I couldn't find relevant information in the knowledge base for this question."
+
+4. **Answer the question**
     - Use natural language; cite every claim with a `[[wikilink]]` to its source note
     - If uncertain, say so clearly — do not invent content not in the vault
     - Suggest a new source to ingest or research if the vault has a gap
+    - Add a confidence indicator to the answer:
+      - **High confidence** — Multiple relevant chunks directly address the question.
+      - **Medium confidence** — Some relevant context found but answer required inference.
+      - **Low confidence** — Sparse or tangentially relevant context. User should verify.   
 
-4. **File back answers worth keeping**
+5. **File back answers worth keeping**
     - If the answer reveals a new insight worth preserving, ask the user whether to create a resource note or update an existing note
     - If yes, follow the conventions in SCHEMA.md (frontmatter, wikilinks, templates)
 
-5. **If the answer revealed a gap**, ask the user if they want to run the `/research` skill to research the topic further
+6. **If the answer revealed a gap**, ask the user if they want to run the `/research` skill to research the topic further
 
-6. **Add to log**
+7. **Add to log**
     Append a `query` entry to `_ref/log.md`:
     ```
     ## [YYYY-MM-DD] query | Topic asked
@@ -46,3 +55,4 @@ When asked about a topic:
 - Create a new note for a one-off trivial question → only file back answers worth keeping
 - Invent content not in the vault → if you don't know, say so and suggest a new source to ingest
 - Skip the log entry when answering a query
+- **Do not hallucinate.** If the retrieved context does not contain enough information to fully answer the question, say what you can answer and explicitly state what is missing.

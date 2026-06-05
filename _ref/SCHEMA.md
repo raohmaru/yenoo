@@ -1,6 +1,7 @@
 # Note Schema
 
 ## Conventions
+- Use Obsidian Flavored Markdown
 - File names: lowercase, hyphens, no spaces (e.g., `transformer-architecture.md`)
 - Every note starts with YAML frontmatter (see below)
 - Daily notes use the format `YYYY-MM-DD.md`

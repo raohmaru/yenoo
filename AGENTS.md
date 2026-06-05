@@ -10,7 +10,7 @@ Uses the PARA framework (actionability-based organization). Before starting any 
 ├── _raw/             ← unprocessed capture from the user, read-only
 ├── _ref/
 │   ├── templates/    ← note templates
-│   ├── index.md      ← master index (maintained by you)
+│   ├── index.md      ← master index for efficient semantic retrieval (maintained by you)
 │   ├── log.md        ← chronological activity log (append-only)
 │   └── SCHEMA.md     ← note schema
 ├── archive/          ← done or inactive, grouped by year subfolders
