@@ -31,26 +31,21 @@ Field details:
 
 ## Tag Taxonomy
 
-Add new tags here in the "Registered tags" section **BEFORE** using them. Every tag on a page must appear in this taxonomy to prevent tag sprawl.
+**BEFORE** using any tag check the file `tags.md` for existing registered tags. Register new tags if needed. Every tag on a page must appear in this taxonomy to prevent tag sprawl.
 
 Usage:
 1. Think of a short, lowercase, hyphenated tag name (e.g., `machine-learning`)
-2. Add it to the list below as `* tag-name`
-3. Reference it in frontmatter as `tags: [tag-name]` or `tags: [tag-one, tag-two]
-
-Registered tags:
-* daily
-* weekly
-* monthly
+2. Add it to the list as `- tag-name`
+3. Reference it in frontmatter as `tags: [tag-name]` or `tags: [tag-one, tag-two]`
 
 ## Note Templates
 
-Create new notes using the templates at `_ref/templates/`:
-- **Daily:** `_ref/templates/daily.md` (includes frontmatter)
-- **Resource:** `_ref/templates/resource.md` (includes frontmatter)
-- **Project:** `_ref/templates/project.md` (includes frontmatter)
-- **Area:** `_ref/templates/area.md` (includes frontmatter)
-- **Weekly Summary:** `_ref/templates/weekly.md` (includes frontmatter)
-- **Monthly Summary:** `_ref/templates/monthly.md` (includes frontmatter)
+Create new notes using the templates at `ref/templates/`:
+- **Daily:** `ref/templates/daily.md` (includes frontmatter)
+- **Resource:** `ref/templates/resource.md` (includes frontmatter)
+- **Project:** `ref/templates/project.md` (includes frontmatter)
+- **Area:** `ref/templates/area.md` (includes frontmatter)
+- **Weekly Summary:** `ref/templates/weekly.md` (includes frontmatter)
+- **Monthly Summary:** `ref/templates/monthly.md` (includes frontmatter)
 
 Templates contain placeholder frontmatter with `created` and `updated` pre-set; fill in the remaining fields on creation.

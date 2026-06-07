@@ -1,51 +1,65 @@
-# YEPARA - Another Brain
+# YENOO - Yet Another Brain Skill
 
 _Schizophrenia not included_.
 
-1.000.000nth implementation of Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) with a twist: it adds the [PARA Method](https://fortelabs.com/blog/para/) by Tiago Forte.
+1.000.000nth implementation of Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) with a twist: it adds the [PARA Method](https://fortelabs.com/blog/para/) by Tiago Forte and works through [Obsidian](https://obsidian.md/).
 
 ## How to Use It
 
 Better not use it.
 
-If you do not desist, then clone the repository, wire yout AI agent into it and follow the workflows below.
+If you do not desist, then copy the skill folder `skills\yenoo` to your project/profile or use the following command to wire yout AI agent into it, and follow the workflows below.
+```
+npx skills add https://github.com/raohmaru/yenoo
+```
 
 ## Core Workflows
 
+* **Setup Brain**
+  Run once to setup the directory structure: `/yenoo setup`
 * **Daily Note**
-  Each morning, open terminal in vault and type `/daily`
+  Each morning, open terminal in vault and type `/yenoo daily`
 * **Research and Capture**
-   Research a topic, synthesize findings and save the note. Usage:
-  * `/research pathfinding A* algorithm and save to my vault`
+  Research a topic, synthesize findings and save the note. Usage:
+  * `/yenoo research pathfinding A* algorithm and save to my vault`
 * **Query**
-  Find information in the vault using `/query`:
+  Find information in the vault using `/yenoo query`:
   * "Find everything I have on small language models and create a map of content"
   * "Read my note from the team meeting on 2026-06-07 and extract all action items assigned to me. Create tasks in projects/current-sprint/tasks.md"
 * **Ingest**
   Incorporate new material into the knowledge base.  
-  Usage: `/ingest _raw/file.md`
-* **Projects and areas**
+  Usage: `/yenoo ingest raw/file.md`
+* **Projects and Areas**
   Ask to add a new actionable project or area, or to update them.
 * **Weekly Review**
-  Run every Friday: `/weekly-review`
+  Run every Friday: `/yenoo weekly-review`
 * **Monthly Review**
-  Run every end of month: `/monthly-review`
+  Run every end of month: `/yenoo monthly-review`
 * **Lint**
-  Run the health-check workflow and reports findings: `/lint`
+  Run the health-check workflow and reports findings: `/yenoo lint`
 
-## Add Projects to the Vault
-You can run the second brain inside a code project that's separate from your Obsidian vault, and still give it access to vault context.
-
-Use a symlink in your vault to pull project docs in:
-```bash
-cd ~/second-brain
-ln -s ~/projects/my-app/docs project-docs
+## Brain Structure
+```
+└── vault/
+    ├── _attachments/     ← images, PDFs (read-only, ignore)
+    ├── _inbox/           ← quick capture, classify during weekly review
+    ├── _raw/             ← unprocessed capture from the user, read-only
+    ├── archives/         ← done or inactive, grouped by year subfolders
+    ├── areas/            ← ongoing responsibilities, grouped by category subfolders
+    ├── daily/            ← daily notes, format YYYY/MM/YYYY-MM-DD.md
+    ├── projects/         ← active projects/efforts, grouped by category subfolders
+    ├── resources/        ← interests and reference, grouped by category subfolders
+    ├── index.md          ← master index for efficient semantic retrieval (maintained by you)
+    ├── log.md            ← chronological activity log (append-only)
+    └── tags.md           ← registered tags
 ```
 
-## Color-Coding the Graph
-Say **"color my graph"**, **"color code by tag"**, **"color by category"**, or **"highlight visibility in graph"** and the `graph-colorize` skill rewrites `<vault>/.obsidian/graph.json` so Obsidian tints nodes by tag, folder, or visibility. It scans your actual vocabulary, picks a colorblind-friendly palette, backs up the existing `graph.json` first, and only touches the `colorGroups` field — your zoom, physics, and filter preferences stay intact. Reload Obsidian (Cmd/Ctrl+R) to see the change.
+## Recommended Skills
 
-Modes: `by-tag` (default — top 10 tags), `by-category` (the seven vault folders), `by-visibility` (highlight `visibility/pii` and `visibility/internal`), `combined` (visibility + tags), or `custom` (user-supplied mapping).
+| Skill |   |
+| ----- | - |
+| [**graph-colorize**](https://www.skills.sh/ar9av/obsidian-wiki/graph-colorize) | Say "color my graph" to color-coding the Obsidian graph |
+| [**obsidian-skills**](https://github.com/kepano/obsidian-skills) | Agent Skills for use with Obsidian |
 
 ## References
 + [Claude Code + Obsidian: Build a Second Brain That Actually Thinks ](https://dev.to/mibii/claude-code-obsidian-build-a-second-brain-that-actually-thinks-d61)
