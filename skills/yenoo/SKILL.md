@@ -1,6 +1,11 @@
 ---
 name: yenoo
 description: Second Brain PARA vault workflow. Use for knowledge mgmt, note creation/editing/querying, research synthesis, daily/weekly/monthly reviews, ingestion, and vault health checks following the PARA framework.
+license: MIT
+metadata:
+  author: raohmaru
+  version: 1.0.0
+  homepage: https://github.com/raohmaru/yenoo
 ---
 
 # YENOO - Second Brain — Context

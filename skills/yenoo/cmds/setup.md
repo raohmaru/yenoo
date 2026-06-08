@@ -7,6 +7,8 @@ description: Setup the folders and files of the vault
 
 Dismiss the PARA rule "Never Create Empty Folders" — in the setup it is allowed to create empty folders.
 
+**Never overwrite existing files**. This is a no-op if `vault/` is already initialised.
+
 - Create the vault folder structure:
   ```bash
   mkdir vault
