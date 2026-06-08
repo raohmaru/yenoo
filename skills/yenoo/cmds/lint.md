@@ -21,10 +21,11 @@ Present findings to the user as a single markdown report:
 **Total notes:** {N}    **Last log:** {YYYY-MM-DD}
 
 ## Found
-- 12 orphan notes (mostly new entities)
-- 2 broken links (wiki/concepts/x → [[foo-bar]] no such note)
-- 4 stale resource notes (>90 days, no re-ingest)
-- 5 concepts mentioned across 3+ notes without their own note
+- N orphan notes (mostly new entities)
+- N broken links (wiki/concepts/x → [[foo-bar]] no such note)
+- N stale resource notes (>90 days, no re-ingest)
+- N concepts mentioned across 3+ notes without their own note
+- N notes that need review
 
 ## Suggested actions
 1. Suggest creating a note for "attention masking" (mentioned in 4 sources) — ask user first before creating

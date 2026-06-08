@@ -8,7 +8,7 @@ description: Create a new project or area following the PARA framework.
 1. Determine the type using the classification decision tree from `ref/PARA.md`:
    - **Has a clear deadline or end state?** → `project`
    - **Ongoing responsibility with no end date?** → `area`
-   - **Uncertain?** → ask the user. If still unclear, suggest `_inbox/` instead.
+   - **Uncertain?** → ask the user. If still unclear, suggest `_inbox/` instead
 2. Collect the required details from the user:
    - **Title** — human-readable name (slugified to lowercase-hyphens for the filename)
    - **Category** — an actionable grouping folder:

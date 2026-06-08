@@ -30,7 +30,7 @@ npx skills add https://github.com/raohmaru/yenoo
   Incorporate new material into the knowledge base.  
   Usage: `/yenoo ingest raw/file.md`
 * **Projects and Areas**
-  Ask to add a new actionable project or area, or to update them.
+  Ask to add a new actionable project or area, or to update them: `/yenoo new`
 * **Weekly Review**
   Run every Friday: `/yenoo weekly-review`
 * **Monthly Review**
@@ -41,16 +41,16 @@ npx skills add https://github.com/raohmaru/yenoo
 ## Brain Structure
 ```
 └── vault/
-    ├── _attachments/     ← images, PDFs (read-only, ignore)
+    ├── _attachments/     ← media assets attached to notes
     ├── _inbox/           ← quick capture, classify during weekly review
-    ├── _raw/             ← unprocessed capture from the user, read-only
-    ├── archives/         ← done or inactive, grouped by year subfolders
-    ├── areas/            ← ongoing responsibilities, grouped by category subfolders
-    ├── daily/            ← daily notes, format YYYY/MM/YYYY-MM-DD.md
-    ├── projects/         ← active projects/efforts, grouped by category subfolders
-    ├── resources/        ← interests and reference, grouped by category subfolders
-    ├── index.md          ← master index for efficient semantic retrieval (maintained by you)
-    ├── log.md            ← chronological activity log (append-only)
+    ├── _raw/             ← unprocessed capture from the user
+    ├── archives/         ← done or inactive
+    ├── areas/            ← ongoing responsibilities
+    ├── daily/            ← daily notes
+    ├── projects/         ← active projects/efforts
+    ├── resources/        ← interests and reference
+    ├── index.md          ← master index
+    ├── log.md            ← chronological activity log
     └── tags.md           ← registered tags
 ```
 

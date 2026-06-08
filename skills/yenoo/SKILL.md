@@ -85,7 +85,7 @@ If no sub-command matches or no sub-command is given, print the available sub-co
 2. **Ongoing responsibility (no end)?** → `areas/`
 3. **Reference material / general interest?** → `resources/`
 4. **Completed/inactive?** → `archives/`
-5. **Uncertain?** → ask user. If still unclear → capture it (flag the note as `status: needs_review`) → `_inbox/`
+5. **Uncertain?** → ask user. If still unclear move it to `_inbox/`
 
 When reclassifying an existing note (e.g., project → archives), ask user to confirm. On confirmation: move the file, update index, log with `reclassify` op.
 
