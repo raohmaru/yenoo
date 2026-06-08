@@ -13,6 +13,8 @@ If you do not desist, then copy the skill folder `skills\yenoo` to your project/
 npx skills add https://github.com/raohmaru/yenoo
 ```
 
+Open the `vault/` folder with Obsidian. In Settings > Files and links, set "Attachment folder path" to `_attachments/`.
+
 ## Core Workflows
 
 * **Setup Brain**
