@@ -26,7 +26,7 @@ description: End-of-month review. Summarize the month, close open tasks, review 
 7. Generate or update the monthly summary note at `daily/YYYY/MM/monthly.md` using the template at `ref/templates/monthly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current month.
 8. Update `index.md` with any new or changed notes.
 9. Ask: "Any wins or lessons you want to add before I save?"
-10. Append a `monthly-review` entry to `log.md` summarizing in one short line what was archived, any reclassifications, and key patterns found.
+10. Insert a `monthly-review` entry to `log.md` summarizing in one short line what was archived, any reclassifications, and key patterns found.
 
 ## Archiving Procedure
 

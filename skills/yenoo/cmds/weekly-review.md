@@ -24,7 +24,7 @@ description: End-of-week review. Summarize the week, close open tasks, and plan 
 7. Generate or update the weekly summary note at `daily/YYYY/MM/WW-weekly.md` using the template at `ref/templates/weekly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current week.
 8. Update `index.md` with any new or changed notes.
 9. Ask: "Any wins or lessons you want to add before I save?"
-10. Append a `weekly-review` entry to `log.md` summarizing in one short line what was completed, archived, or left open.
+10. Insert a `weekly-review` entry to `log.md` summarizing in one short line what was completed, archived, or left open.
 
 ## Archiving Procedure
 

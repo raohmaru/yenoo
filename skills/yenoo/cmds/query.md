@@ -35,7 +35,7 @@ When asked about a topic:
 6. **If the answer revealed a gap**, ask the user if they want to run the `/research` skill to research the topic further
 
 7. **Add to log**
-    Append a `query` entry to `log.md`:
+    Insert a `query` entry to `log.md`:
     ```
     ## [YYYY-MM-DD] query | Topic asked
     - Short summary of what was asked and answered

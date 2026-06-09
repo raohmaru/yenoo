@@ -85,7 +85,7 @@ For each source file, follow this workflow:
    - Any contradictions found with existing content
 
 11. **Add to log**
-    Append an `ingest` entry to `log.md`:
+    Insert an `ingest` entry to `log.md`:
     ```
     ## [YYYY-MM-DD] ingest | Source Title
     - Short summary of what was ingested

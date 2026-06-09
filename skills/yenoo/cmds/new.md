@@ -37,7 +37,7 @@ description: Create a new project or area following the PARA framework.
 7. Update `index.md`:
    - Add a new entry under the correct category heading with a one-line summary
 8. Update `log.md`:
-   - Append a `create` entry with the note title and type
+   - Insert a `create` entry with the note title and type
 
 ## Conventions
 

@@ -59,7 +59,7 @@ When asked to research a topic:
 
 14. **Report** results to the user: what was created or updated, any new projects/areas, and any contradictions found.
 
-15. **Append** a `research` entry to `log.md` summarizing in one short line what was researched.
+15. **Insert** a `research` entry to `log.md` summarizing in one short line what was researched.
 
 ## Conventions
 

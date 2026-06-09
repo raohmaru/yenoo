@@ -132,7 +132,7 @@ Compare `index.md` against actual `archives/`, `areas/`, `projects/` and `resour
 
 ## Add to log
 
-Append a `lint` entry to `log.md`:
+Insert a `lint` entry to `log.md`:
 ```
 ## [YYYY-MM-DD] lint | Lint findings
 - Short summary of what was found and what was fixed
