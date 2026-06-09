@@ -108,7 +108,7 @@ Format:
 ```
 # Index
 
-_Updated 2026-05-20 • N pages_
+_Updated YYYY-MM-DD • N pages_
 
 ## Category-Name (N)
 - [[path/to/note|Note Title]] — one-line short summary _(N sources - updated YYYY-MM-DD)_
