@@ -9,7 +9,8 @@ description: End-of-week review. Summarize the week, close open tasks, and plan 
 2. Check if this week's summary exists at `daily/YYYY/MM/WW-weekly.md`:
    - **If not:** create it from the template at `ref/templates/weekly.md` (if the template is missing, create a minimal note with the standard sections and warn the user).
    - **If yes:** read the existing note to merge or overwrite with user input.
-3. Read all daily notes from this week (Mon–Fri). If some days are missing, skip them silently and note which dates were absent.
+3. Read all daily notes from this week (Mon–Fri). If some days are missing, skip them silently and note which dates were absent.  
+   Update the status of each daily note to "done".
 4. Extract:
    - Completed tasks (✅)
    - Incomplete tasks (still open)

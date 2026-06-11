@@ -88,7 +88,7 @@ Grep for common patterns: phrases like "see also", concept-shaped nouns mentione
 
 ### Cross-Reference Gaps
 
-For each note, check: do all entities and concepts mentioned have wikilinks? If a concept is referenced as plain text in 3+ places, promote it to a wikilink. If creating a new note, ask the user first (per AGENTS.md: do not create wikilinks to nonexistent notes unless planned).
+For each note, check: do all entities and concepts mentioned have wikilinks? If a concept is referenced as plain text in 3+ places, promote it to a wikilink. If creating a new note, ask the user first (per SKILL.md: do not create wikilinks to nonexistent notes unless planned).
 
 ## Hygiene Checks
 

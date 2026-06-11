@@ -45,5 +45,5 @@ description: Create a new project or area following the PARA framework.
 - Use the PARA decision tree from `ref/PARA.md` to distinguish projects from areas
 - File names: lowercase, hyphens, no spaces (per SCHEMA.md)
 - Deep nesting: maximum 2 directory levels (`areas/business/invoicing.md` good, deeper bad — per SKILL.md)
-- Always ask the user before creating wikilinks to nonexistent notes (per AGENTS.md)
+- Always ask the user before creating wikilinks to nonexistent notes (per SKILL.md)
 
