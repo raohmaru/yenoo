@@ -17,6 +17,8 @@ Source documents in `_raw/` (PDFs, text files, web clippings, images, drafts) ar
 
 This applies to all source formats.
 
+If the ingestion of the file is refused then tell the user the reason.
+
 ## Identify Sources to Process
 
 Determine which files need ingestion:
@@ -50,7 +52,7 @@ For each source file, follow this workflow:
    Before writing anything, share the 3-5 most important takeaways. Ask the user if they want to emphasize any particular aspects or skip any topics. Wait for confirmation before proceeding.
 
 3. **Tag the topic**
-   Check the registered tags in `tags.md`. Reuse existing tags that are  appropriate for the topic or register new tags if needed.
+   Check the registered tags in `tags.md`. Reuse existing tags that are appropriate for the topic or register new tags if needed.
 
 4. **Create or locate the note**
    - Determine the appropriate category folder under `resources/`; create it if it doesn't exist
@@ -73,7 +75,7 @@ For each source file, follow this workflow:
    Review the note. Is it well-structured? Does it cite sources? Is it consistent with the rest of the notes? Is the `updated` date correct? Correct the note as needed.
 
 8. **Update the index**
-   Add or update the entry in `index.md` under the correct category heading. Follow the format defined in AGENTS.md section "Indexing".
+   Add or update the entry in `index.md` under the correct category heading. Follow the format defined in SKILL.md section "Indexing".
 
 9. **Bump `updated` date**
    If any existing note was modified, set the `updated` field in frontmatter to today.
