@@ -46,7 +46,8 @@ For each source file, follow this workflow:
       - Text (.txt) — read directly
       - PDF (.pdf) — use the Read tool with page ranges
       - Web clippings — markdown files from Obsidian Web Clipper
-      - Images (.png, .jpg, .jpeg, .webp, .gif) — requires a vision-capable model. Use the Read tool, which renders the image into your context. Treat screenshots, whiteboard photos, diagrams, and slide captures as first-class sources. If your model doesn't support vision, skip image sources and tell the user which files were skipped so they can re-run with a vision-capable model.
+      - Images (.png, .jpg, .jpeg, .webp, .gif) — requires a vision-capable model. Use the Read tool, which renders the image into your context. Treat screenshots, whiteboard photos, diagrams, and slide captures as first-class sources. If your model doesn't support vision, skip image sources and tell the user which files were skipped so they can re-run with a vision-capable model.  
+        If the output of the image is noisy and contains many mis‑recognitions, advice the user to provide a higher‑quality image or preprocessing the picture and read it again. 
 
 2. **Discuss key takeaways with the user**
    Before writing anything, share the 3-5 most important takeaways. Ask the user if they want to emphasize any particular aspects or skip any topics. Wait for confirmation before proceeding.
