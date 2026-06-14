@@ -26,7 +26,7 @@ Determine which files need ingestion:
 2. If the user specifies to ingest the newest files, get the latest created files in the `_raw/` folder
 3. If no unprocessed files are found, tell the user
 
-**Only ingest sources that are new.** Grep the log: `grep "filename" log.md` to check if already ingested.
+**Only ingest sources that are new.** Grep the log: `grep "| filename" log.md` to check if already ingested.
 
 ## Check for Existing Notes
 
@@ -60,6 +60,7 @@ For each source file, follow this workflow:
    - Create a new file in `resources/<category>/` using the template at `ref/templates/resource.md` and the schema defined at `ref/SCHEMA.md`, named after the source (slugified).  
      If the template is missing, create a minimal note with the standard sections and warn the user.
    - Set `created` and `updated` frontmatter fields to today's date
+   - Set `status: processed` frontmatter field
    - Include sections:
      - **Overview** (structured summary of the source content)
      - **Key Concepts** (the important parts)
@@ -90,7 +91,7 @@ For each source file, follow this workflow:
 11. **Add to log**
     Insert an `ingest` entry to `log.md`:
     ```
-    ## [YYYY-MM-DD] ingest | Source Title
+    ## [YYYY-MM-DD] ingest | <ingested filename>
     - Short summary of what was ingested
     ```
 

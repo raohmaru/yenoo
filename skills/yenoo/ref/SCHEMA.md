@@ -18,7 +18,7 @@ title: Page Title           # required — human-readable title
 created: YYYY-MM-DD         # required — date note was first created
 updated: YYYY-MM-DD         # required — date of last modification (set same as created on new notes)
 type: project | area | resource | daily | summary   # required
-status: active | on-hold | done | archived | reference | needs_review  # required
+status: active | on-hold | done | archived | reference | processed | needs_review  # required
 tags: [tag-one, tag-two]    # required — must come from taxonomy below
 ---
 ```
