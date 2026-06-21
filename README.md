@@ -15,7 +15,7 @@ npx skills add https://github.com/raohmaru/yenoo
 
 Open the `vault/` folder with Obsidian. In Settings > Files and links, set "Attachment folder path" to `_attachments/`.
 
-## Core Workflows
+### Core Workflows
 
 * **Setup Brain**
   Run once to setup the directory structure: `/yenoo setup`
@@ -62,6 +62,29 @@ Open the `vault/` folder with Obsidian. In Settings > Files and links, set "Atta
 | ----- | - |
 | [**graph-colorize**](https://www.skills.sh/ar9av/obsidian-wiki/graph-colorize) | Say "color my graph" to color-coding the Obsidian graph |
 | [**obsidian-skills**](https://github.com/kepano/obsidian-skills) | Agent Skills for use with Obsidian |
+
+## Sync the Second Brain with Git
+
+The vault is a directory of plain markdown files. You can push it to a private [git](https://git-scm.com/) repository to get version history, backup, and cross-device sync (if pushing the repository to a service like GitHub).
+
+### Setup
+
+1. Navigate to the vault folder an execute `git init` to create a new Git repository
+2. Create a `.gitignore` to exclude `.obsidian` (Obsidian workspace/cache files)
+3. Optionally sync it with a GitHub remote you own
+
+### Sync the Vault Manually
+
+Run the bash script [vault-sync-commit.sh](scripts/vault-sync-commit.sh) in the vault folder to commit the changes as `sync 2026-06-08 14:00` and push it if a remote origin exists.
+
+### Auto-Sync via Cron Jobs
+
+Add a cron job to execute the script [vault-sync-commit.sh](scripts/vault-sync-commit.sh) in the vault folder at a given schedule to automate synching the git repository
+
+```
+Execute each hour the sync script cron job
+0 * * * * scripts/vault-sync-commit.sh >> vault/sync.log 2>&1
+```
 
 ## References
 + [Claude Code + Obsidian: Build a Second Brain That Actually Thinks ](https://dev.to/mibii/claude-code-obsidian-build-a-second-brain-that-actually-thinks-d61)
