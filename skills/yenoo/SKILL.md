@@ -84,6 +84,7 @@ If no sub-command matches or no sub-command is given, print the available sub-co
 - Don't create, modify or delete files in `_attachments/` or `_raw/` — sources are immutable
 - Don't create empty folders; only create a folder when you have a note to put in it
 - Deep nesting: maximum 2 directory levels (`areas/business/invoicing.md` good, deeper bad)
+- Don't create notes outside of the `archives/`, `areas/`, `daily/`, `projects/` or `resources/` folders
 
 ## Classification Decision Tree
 1. **Has deadline/end state?** → `projects/`

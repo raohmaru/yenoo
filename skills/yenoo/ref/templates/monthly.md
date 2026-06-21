@@ -3,15 +3,17 @@ title: YYYY-MM Monthly Summary
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: summary
-status: reference
+status: done
 tags: [monthly]
 ---
 
-## What got done
+# Monthly Review YYYY-MM
 
-## What didn't (and why)
+## What Got Done
 
-## Patterns this month
+## What Didn't (And Why)
+
+## Patterns This Month
 
 ## Areas
 - Active/ongoing responsibilities
@@ -23,11 +25,11 @@ tags: [monthly]
 - [N] Outdated or potentially obsolete resources
 - [list if any]
 
-## Archived projects
+## Archived Projects
 
-## Open decisions (notes in `_inbox/` with `status: needs_review`)
+## Open Decisions (notes in `_inbox/` with `status: needs_review`)
 
-## Next month priorities
+## Next Month Priorities
 1. [Highest priority action]
 2. [Second priority]
 3. [etc.]

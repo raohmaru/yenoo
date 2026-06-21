@@ -6,10 +6,10 @@ description: End-of-week review. Summarize the week, close open tasks, and plan 
 # Weekly Review Workflow (Projects focus)
 
 1. Ensure the directory `daily/YYYY/MM/` exists (create if missing).
-2. Check if this week's summary exists at `daily/YYYY/MM/WW-weekly.md`:
+2. Check if this week's summary exists at `daily/YYYY/MM/YYYY-MM-WW-weekly-W[week number].md.md`:
    - **If not:** create it from the template at `ref/templates/weekly.md` (if the template is missing, create a minimal note with the standard sections and warn the user).
    - **If yes:** read the existing note to merge or overwrite with user input.
-3. Read all daily notes from this week (Mon–Fri). If some days are missing, skip them silently and note which dates were absent.  
+3. Read all daily notes from this week (Mon–Sun). If some days are missing, skip them silently and note which dates were absent.  
    Update the status of each daily note to "done".
 4. Extract:
    - Completed tasks (✅)
@@ -22,10 +22,13 @@ description: End-of-week review. Summarize the week, close open tasks, and plan 
    - Resources that might now belong to an active project?
 6. Classify notes in `_inbox/` using the PARA framework.
    - If not possible, ask the user where to place it. If still unclear update frontmatter `status: needs_review`
-7. Generate or update the weekly summary note at `daily/YYYY/MM/WW-weekly.md` using the template at `ref/templates/weekly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current week.
-8. Update `index.md` with any new or changed notes.
-9. Ask: "Any wins or lessons you want to add before I save?"
-10. Insert a `weekly-review` entry to `log.md` summarizing in one short line what was completed, archived, or left open.
+7. Ask: "Any wins or lessons you want to add before I save?"
+8. Generate or update the weekly summary note at `daily/YYYY/MM/YYYY-MM-WW-weekly-W[week number].md.md` using the template at `ref/templates/weekly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current week.
+9. Insert a `weekly-review` entry to `log.md`:
+   ```
+   ## [YYYY-MM-DD] | YYYY-W[week number] Summary
+   - Short summary of what was completed, archived, or left open
+   ```
 
 ## Archiving Procedure
 
@@ -41,3 +44,4 @@ Archive a project when it is clearly completed, historical, or inactive (or user
 
 - Weekly summaries use `type: summary` and require full frontmatter (per SCHEMA.md).
 - Prefer reclassifying inbox notes over leaving them at `needs_review` — only fall back to `needs_review` when classification is genuinely unclear.
+- Weekly summaries notes are exempt from the minimum 2 [[wikilinks]] requirement (per SCHEMA.md).

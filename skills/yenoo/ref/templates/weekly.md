@@ -1,26 +1,30 @@
 ---
-title: YYYY-WW Weekly Summary
+title: YYYY-W[week number] Weekly Review
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: summary
-status: reference
+status: done
 tags: [weekly]
 ---
 
-## What got done
+# Weekly Review YYYY-W[week number] (Month week_day_start–week_day_end)
 
-## What didn't (and why)
+## What Got Done
 
-## Patterns this week
+## What Didn't (And Why)
+
+## Patterns This Week
 
 ## Projects
 - Projects without next steps
 - Projects with possible completion (status: done or no activity > 14 days)
 - [list if any]
 
-## Unclassified notes in Inbox
+## Unclassified Notes In Inbox
 
-## Next week priorities
+## Important Notes
+
+## Next Week Priorities
 1. [Highest priority action]
 2. [Second priority]
 3. [etc.]
