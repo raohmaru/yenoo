@@ -23,9 +23,9 @@ description: End-of-month review. Summarize the month, close open tasks, review 
    - Duplicate notes or heavily overlapping content? → see Duplicated Notes
    - Projects with `done` status for 30+ days → Flag and offer to archive (see Archiving Procedure below).
 6. Ensure areas reflect current priorities.
-7. Ask: "Any wins or lessons you want to add before I save?"
+7. Show the user a summary of the monthly review, and then ask they: "Any wins or lessons you want to add before I save?"
 8. Generate or update the monthly summary note at `daily/YYYY/MM/YYYY-MM-monthly.md` using the template at `ref/templates/monthly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current month.
-9. Update `index.md` with any new or changed notes.
+9. Update `index.md` with any new or changed notes in the folders `archives/`, `areas/`, `projects/` and `resources/`.
 10. Insert a `monthly-review` entry to `log.md`:
     ```
     ## [YYYY-MM-DD] | YYYY-W[week number] Summary

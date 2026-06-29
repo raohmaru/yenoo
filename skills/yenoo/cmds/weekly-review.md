@@ -20,15 +20,16 @@ description: End-of-week review. Summarize the week, close open tasks, and plan 
    - Deadline/target date still valid?
    - Any project that reached `done` but not yet archived? → Flag and offer to archive (see Archiving Procedure below).
    - Resources that might now belong to an active project?
-6. Classify notes in `_inbox/` using the PARA framework.
+6. Show the user a summary of the weekly review, and then ask they: "Any wins or lessons you want to add before I save?"
+7. Generate or update the weekly review note at `daily/YYYY/MM/YYYY-MM-WW-weekly-W[week number].md.md` using the template at `ref/templates/weekly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current week.
+8. Classify notes in `_inbox/` using the PARA framework.
    - If not possible, ask the user where to place it. If still unclear update frontmatter `status: needs_review`
-7. Ask: "Any wins or lessons you want to add before I save?"
-8. Generate or update the weekly summary note at `daily/YYYY/MM/YYYY-MM-WW-weekly-W[week number].md.md` using the template at `ref/templates/weekly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current week.
-9. Insert a `weekly-review` entry to `log.md`:
-   ```
-   ## [YYYY-MM-DD] | YYYY-W[week number] Summary
-   - Short summary of what was completed, archived, or left open
-   ```
+9. Update `index.md` with any new or changed notes in the folders `archives/`, `areas/`, `projects/` and `resources/`.
+10. Insert a `weekly-review` entry to `log.md`:
+    ```
+    ## [YYYY-MM-DD] | YYYY-W[week number] Summary
+    - Short summary of what was completed, archived, or left open
+    ```
 
 ## Archiving Procedure
 
