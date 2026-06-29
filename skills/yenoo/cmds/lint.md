@@ -73,7 +73,7 @@ Every note in in the `archives/`, `areas/`, `projects/` and `resources/` folders
 - Flag notes missing required fields
 
 **How to fix:**
-- Add missing fields with reasonable defaults
+- Add missing fields with reasonable defaults as per `ref/SCHEMA.md`.
 
 ### Stale Claims
 

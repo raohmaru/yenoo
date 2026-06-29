@@ -4,7 +4,7 @@ description: Second Brain PARA vault workflow. Use for knowledge mgmt, note crea
 license: MIT
 metadata:
   author: raohmaru
-  version: 1.0.2
+  version: 1.0.3
   homepage: https://github.com/raohmaru/yenoo
 ---
 
@@ -72,8 +72,8 @@ User invokes `/yenoo` followed by a sub-command and optional arguments, e.g.:
 | `daily`            | `cmds/daily.md`          | create or update today's daily note and plan  |
 | `weekly`           | `cmds/weekly-review.md`  | end-of-week review |
 | `weekly-review`    | `cmds/weekly-review.md`  | end-of-week review |
-| `monthly-review`   | `cmds/monthly-review.md` | end-of-month review |
 | `monthly`          | `cmds/monthly-review.md` | end-of-month review |
+| `monthly-review`   | `cmds/monthly-review.md` | end-of-month review |
 | `new`              | `cmds/new.md`            | create a new project or area following the PARA framework |
 | `lint`             | `cmds/lint.md`           | audit and maintain the health of the vault |
 
