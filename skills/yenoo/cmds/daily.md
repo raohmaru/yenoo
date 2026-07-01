@@ -20,7 +20,7 @@ description: Morning planning session. Use at the start of the day to create or 
    - **End of day** (leave empty for later)
    Then proceed to step 7.
 6. If no content was extracted (no yesterday note, no active projects, not tasks), ask the user what they want to focus on today and if so, convert their response into new tasks.
-7. Show the user a summary with today's focus priorities and tasks, and then ask they: "Anything to add before I save?" and if so, add their response to the "Notes" section.
+7. Show the user a summary with today's focus priorities and tasks, and then ask they: "Anything to add or change before I save?" and if so, modify the note as requested by the user. If you cannot convert their response into new tasks or focus priorities, then add their response to the "Notes" section.
 8. Insert a `daily` entry to `log.md` summarizing the note's date and any notable carry-over or focus shifts.
 
 ## Conventions
