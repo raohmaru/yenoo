@@ -5,6 +5,10 @@ description: End-of-month review. Summarize the month, close open tasks, review 
 
 # Monthly Review Workflow (Areas + Resources focus)
 
+Before starting, define the month to review by the current date:
+- It is the last day of the month? Then review the current month
+- It is the beginning of the month? Then review the previous month
+
 1. Ensure the directory `daily/YYYY/MM/` exists (create if missing).
 2. Check if this month's summary exists at `daily/YYYY/MM/YYYY-MM-monthly.md`:
    - **If not:** create it from the template at `ref/templates/monthly.md` (if the template is missing, create a minimal note with the standard sections and warn the user).
