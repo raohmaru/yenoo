@@ -29,10 +29,10 @@ Before starting, define the month to review by the current date:
 6. Ensure areas reflect current priorities.
 7. Show the user a summary of the monthly review, and then ask they: "Any wins or lessons you want to add before I save?"
 8. Generate or update the monthly summary note at `daily/YYYY/MM/YYYY-MM-monthly.md` using the template at `ref/templates/monthly.md`. Update the frontmatter `title`, `created`, and `updated` dates to match the current month.
-9. Update `index.md` with any new or changed notes in the folders `archives/`, `areas/`, `projects/` and `resources/`.
+9. Update `index.md` with any new or changed notes in the folders `archives/`, `areas/`, `projects/` and `resources/`. **Do not the index monthly-review note**.
 10. Insert a `monthly-review` entry to `log.md`:
     ```
-    ## [YYYY-MM-DD] | YYYY-W[week number] Summary
+    ## [YYYY-MM-DD] monthly-review | YYYY-W[week number] Summary
     - Short summary of what was archived, any reclassifications, and key patterns found.
     ```
 

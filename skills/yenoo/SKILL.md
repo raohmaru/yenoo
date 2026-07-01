@@ -4,7 +4,7 @@ description: Second Brain PARA vault workflow. Use for knowledge mgmt, note crea
 license: MIT
 metadata:
   author: raohmaru
-  version: 1.0.4
+  version: 1.0.5
   homepage: https://github.com/raohmaru/yenoo
 ---
 
@@ -129,7 +129,7 @@ Format:
 - Short summary (sources, notes modified, result)
 ```
 
-Valid ops: `research`, `ingest`, `query`, `lint`, `create`, `update`, `note`, `classify`, `reclassify`, `archive`, `move`, `setup`.
+Valid ops: `research`, `ingest`, `query`, `lint`, `create`, `update`, `note`, `classify`, `reclassify`, `archive`, `move`, `setup`, `monthly-review`, `weekly-review`.
 
 The log is parseable with grep: `grep "^## \[" log.md | tail -10` gives the last 10 entries.
 
