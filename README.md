@@ -8,7 +8,7 @@ _Schizophrenia not included_.
 
 Better not use it.
 
-If you do not desist, then copy the skill folder `skills\yenoo` to your project/profile or use the following command to wire yout AI agent into it, and follow the workflows below.
+If you do not desist, then copy the skill folder `skills/yenoo` to your project/profile or use the following command to wire yout AI agent into it, and follow the workflows below.
 ```
 npx skills add https://github.com/raohmaru/yenoo
 ```
@@ -75,15 +75,15 @@ The vault is a directory of plain markdown files. You can push it to a private [
 
 ### Sync the Vault Manually
 
-Run the bash script [vault-sync-commit.sh](scripts/vault-sync-commit.sh) in the vault folder to commit the changes as `sync 2026-06-08 14:00` and push it if a remote origin exists.
+Run the bash script [vault-sync-commit.sh](skills/yenoo/scripts/vault-sync-commit.sh) in the vault folder to commit the changes as `sync 2026-06-08 14:00` and push it if a remote origin exists.
 
 ### Auto-Sync via Cron Jobs
 
-Add a cron job to execute the script [vault-sync-commit.sh](scripts/vault-sync-commit.sh) in the vault folder at a given schedule to automate synching the git repository
+Add a cron job to execute the script [vault-sync-commit.sh](skills/yenoo/scripts/vault-sync-commit.sh) in the vault folder at a given schedule to automate synching the git repository
 
 ```
 Execute each hour the sync script cron job
-0 * * * * scripts/vault-sync-commit.sh >> vault/sync.log 2>&1
+0 * * * * skills/yenoo/scripts/vault-sync-commit.sh >> vault/sync.log 2>&1
 ```
 
 ## References

@@ -4,7 +4,7 @@ description: Second Brain PARA vault workflow. Use for knowledge mgmt, note crea
 license: MIT
 metadata:
   author: raohmaru
-  version: 1.0.5
+  version: 1.0.6
   homepage: https://github.com/raohmaru/yenoo
 ---
 
