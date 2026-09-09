@@ -1,0 +1,51 @@
+{
+  "expectations": [
+    {
+      "text": "The existing note remains the only topic note and retains its original fact.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The note has valid resource frontmatter and updated 2026-09-09.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The note has required sections and a URL source.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The index and research log are synchronized.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "No sensitive fixture content appears in the note.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 0,
+    "errors_encountered": 0,
+    "output_chars": 0,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "total_duration_seconds": 0.0
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}

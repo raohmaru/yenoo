@@ -1,0 +1,51 @@
+{
+  "expectations": [
+    {
+      "text": "Today's note has valid daily frontmatter.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The incomplete task is carried over and completed task is not.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "Active-project priorities are included.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "Required daily sections exist and End of day is empty.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The log is updated and protected files are unchanged.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 0,
+    "errors_encountered": 0,
+    "output_chars": 0,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "total_duration_seconds": 0.0
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}

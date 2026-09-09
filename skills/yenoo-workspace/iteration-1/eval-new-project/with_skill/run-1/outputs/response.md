@@ -1,0 +1,1 @@
+Created the project note at `vault/projects/work/team-wiki-to-obsidian.md` with valid frontmatter, existing tags, the 2026-10-15 deadline, migration outcome, tasks, and three wikilinks. Updated `index.md` and added a `create` entry to `log.md`. Reference files remain unchanged.

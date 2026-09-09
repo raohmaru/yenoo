@@ -1,0 +1,51 @@
+{
+  "expectations": [
+    {
+      "text": "The answer mentions both documented Atlas risks.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The answer identifies the assigned rate-limit quota action and date.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "Factual claims have wikilink citations.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The answer includes a prescribed confidence level.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "No vault files are changed.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 0,
+    "errors_encountered": 0,
+    "output_chars": 0,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "total_duration_seconds": 0.0
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}

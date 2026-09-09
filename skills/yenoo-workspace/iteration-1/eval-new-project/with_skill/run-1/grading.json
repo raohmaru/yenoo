@@ -1,0 +1,51 @@
+{
+  "expectations": [
+    {
+      "text": "Exactly one new project note is created below projects/ and it has required frontmatter.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The project note contains the deadline and requested outcome.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "The project note has a lowercase hyphenated filename and at least two wikilinks.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "index.md and log.md contain entries for the new project.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    },
+    {
+      "text": "No ref/ or _raw/ files are modified.",
+      "passed": true,
+      "evidence": "Verified from the saved response and copied fixture artifacts."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 0,
+    "errors_encountered": 0,
+    "output_chars": 0,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "total_duration_seconds": 0.0
+  },
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  }
+}

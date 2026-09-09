@@ -1,4 +1,4 @@
-# YENOO - Yet Another Brain Skill
+# YENOO - Yet Another Brain Skill 🧠
 
 _Schizophrenia not included_.
 
@@ -75,7 +75,7 @@ The vault is a directory of plain markdown files. You can push it to a private [
 
 ### Sync the Vault Manually
 
-Run the bash script [vault-sync-commit.sh](skills/yenoo/scripts/vault-sync-commit.sh) in the vault folder to commit the changes as `sync 2026-06-08 14:00` and push it if a remote origin exists.
+Run the bash script [vault-sync-commit.sh](skills/yenoo/scripts/vault-sync-commit.sh) in the vault folder to commit the changes as `sync <timestamp>` and push it if a remote origin exists.
 
 ### Auto-Sync via Cron Jobs
 
