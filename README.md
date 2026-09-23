@@ -2,13 +2,11 @@
 
 _Schizophrenia not included_.
 
-1.000.000nth implementation of Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) with a twist: it adds the [PARA Method](https://fortelabs.com/blog/para/) by Tiago Forte and works through [Obsidian](https://obsidian.md/).
+Implementation of Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) with a twist: it adds the [PARA Method](https://fortelabs.com/blog/para/) by Tiago Forte and works through [Obsidian](https://obsidian.md/).
 
 ## How to Use It
 
-Better not use it.
-
-If you do not desist, then copy the skill folder `skills/yenoo` to your project/profile or use the following command to wire yout AI agent into it, and follow the workflows below.
+If you do not desist, then copy the skill folder `skills/yenoo` to your project/profile or use the following command to wire your AI agent into it, and follow the workflows below.
 ```
 npx skills add https://github.com/raohmaru/yenoo
 ```
